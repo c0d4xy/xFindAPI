@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "xfind"
+version = "0.1.0"
+description = "API para realizar consultas de dados do xFind"
+authors = ["Codaxy <codaxy@duck.com>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+start-api = "xfind.core.server:start"
+
+[tool.poetry.dependencies]
+python = "^3.13"
+pydantic-settings = "^2.6.0"
+uvicorn = "^0.32.0"
+fastapi = "^0.115.3"
+aiohttp = "^3.10.10"
+pyjwt = "^2.9.0"
+scalar-fastapi = "^1.0.3"
+requests = "^2.32.3"
